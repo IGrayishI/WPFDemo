@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CatWithShades.jpg" />
+    <None Remove="signal man.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="CatWithShades.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\signal man.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

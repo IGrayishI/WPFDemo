@@ -1,0 +1,80 @@
+﻿<Window x:Class="WPFDemo.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDemo"
+        mc:Ignorable="d"
+        Title="Window2" Height="500" Width="350">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "20" />
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Image 
+            x:Name="QuestionImage" 
+            Grid.Column="2" 
+            Grid.ColumnSpan="3" 
+            Grid.Row="1" 
+            Grid.RowSpan="3" 
+            Source="CatWithShades.jpg"  
+            Height="300" 
+            Width="300"/>
+        <Label 
+            x:Name="Question" 
+            Grid.Column="3" 
+            Grid.ColumnSpan="1" 
+            Grid.Row="4" 
+            Content="Question In Question"/>
+        <Button 
+            x:Name="OptionA" 
+            Grid.Column="2" 
+            Grid.Row="5" 
+            Content="OptionA" Click="OptionA_Click"/>
+        <Button 
+            x:Name="OptionB" 
+            Grid.Column="2" 
+            Grid.Row="7" 
+            Content="ÓptionB" Click="OptionB_Click"/>
+        <Button 
+            x:Name="OptionC" 
+            Grid.Column="4" 
+            Grid.Row="5" 
+            Content="OptionC" Click="OptionC_Click" />
+        <Button 
+            x:Name="OptionD" 
+            Grid.Column="4" 
+            Grid.Row="7" 
+            Content="OptionD" Click="OptionD_Click"/>
+        <Button
+            x:Name="SubmitButton"
+            Grid.Column="2"
+            Grid.ColumnSpan="3"
+            Grid.Row="9"
+            Content="Submit Your Answer" Click="SubmitButton_Click"/>
+    </Grid>
+</Window>
